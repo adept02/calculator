@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculator</title>
+   <link rel="icon" type="image/x-icon" href="./icons/calculator.ico">
+   <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+   <div class="box">
+      <input type="text" class="math" id="math">
+      <div class="body-math">
+         <div class="left-math">
+            <button class="btn" type="button" onclick="mod()">
+               <span>%</span>
+            </button>
+            <button class="btn" type="button" onclick="zero()">
+               <span>CE</span>
+            </button>
+            <button class="btn" type="button" onclick="clean()">
+               <span>C</span>
+            </button>
+            <button class="btn" type="button" onclick="display('**(-1)')">
+               <span>1&frasl;<sub>x</sub></span>
+            </button>
+            <button class="btn" type="button" onclick="sqr()">
+               <span>x<sup>2</sup></span>
+            </button>
+            <button class="btn" type="button" onclick="roots()">
+               <span>√x</span>
+            </button>
+            <button class="btn btn-light" type="button" onclick="display(7)">
+               <span>7</span>
+            </button>
+            <button class="btn btn-light" type="button" onclick="display(8)">
+               <span>8</span>
+            </button>
+            <button class="btn btn-light" type="button" onclick="display(9)">
+               <span>9</span>
+            </button>
+            <button class="btn btn-light" type="button" onclick="display(4)">
+               <span>4</span>
+            </button>
+            <button class="btn btn-light" type="button" onclick="display(5)">
+               <span>5</span>
+            </button>
+            <button class="btn btn-light" type="button" onclick="display(6)">
+               <span>6</span>
+            </button>
+            <button class="btn btn-light" type="button" onclick="display(1)">
+               <span>1</span>
+            </button>
+            <button class="btn btn-light" type="button" onclick="display(2)">
+               <span>2</span>
+            </button>
+            <button class="btn btn-light" type="button" onclick="display(3)">
+               <span>3</span>
+            </button>
+            <button class="btn btn-light" type="button" onclick="display('-')">
+               <span>&plusmn;</span>
+            </button>
+            <button class="btn btn-light" type="button" onclick="display(0)">
+               <span>0</span>
+            </button>
+            <button class="btn btn-light" type="button" onclick="display('.')">
+               <span>&#10079;</span>
+            </button>
+         </div>
+         <div class="right-math">
+            <button class="btn" type="button" onclick="del()">
+               <span>&larr;</span>
+            </button>
+            <button class="btn" type="button" onclick="display('/')">
+               <span>&frasl;</span>
+            </button>
+            <button class="btn" type="button" onclick="display('*')">
+               <span>&times;</span>
+            </button>
+            <button class="btn" type="button" onclick="display('-')">
+               <span>&minus;</span>
+            </button>
+            <button class="btn" type="button" onclick="display('+')">
+               <span>&plus;</span>
+            </button>
+            <button class="btn btn-equals" id="equals" type="button" value="15" onclick="calculate()">
+               <span>&equals;</span>
+            </button>
+         </div>
+      </div>
+   </div>
+ 
+   <script src="./main.js"></script>
+</body>
+</html>
